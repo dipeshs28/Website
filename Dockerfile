@@ -12,5 +12,5 @@ WORKDIR /var/www/html
 RUN unzip grandcoffee.zip
 RUN cp -rvf html/* .
 RUN rm -rf grandcoffee grandcoffee.zip
-#CMD ["/usr/sbin/httpd", "-D",  "FOREGROUND"]
+CMD ["/usr/sbin/httpd", "-D",  "FOREGROUND"]
 EXPOSE 8000
